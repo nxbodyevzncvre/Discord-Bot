@@ -54,7 +54,7 @@ async def bothelp(ctx):
 @bot.command()
 async def background_task():
     await client.wait_until_ready()
-    channel = client.get_channel(888745962657423382)
+    channel = client.get_channel(#channel id)
     time = 5
     await asyncio.sleep(time)
     with open("text.txt", encoding='utf-8', mode='r') as f:
@@ -200,4 +200,4 @@ async def ban(ctx, member : discord.Member, *, reason = "хуесос, выйд�
 
 
 
-bot.run('OTg1OTMxNjY1ODExNTk5NDIy.GbIOio.LAfQwOoPjjxCJgT-do1HZlbgK7GtvdPvdnNS-w')
+bot.run(#token)
